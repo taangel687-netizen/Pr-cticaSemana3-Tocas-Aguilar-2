@@ -210,3 +210,118 @@
     </div>
   </div>
 </section>
+
+<!-- ==================== FORMULARIO ==================== -->
+<section id="contacto" class="py-5">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-2 display-5">Reserva tu Pedido</h2>
+    <p class="text-center text-muted mb-5">
+      Completa el formulario y te contactamos
+    </p>
+
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-lg-6">
+        <form class="needs-validation" novalidate>
+          <!-- Nombre -->
+          <div class="mb-3">
+            <label for="nombre" class="form-label fw-semibold"
+              >Nombre completo</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="nombre"
+              name="nombre"
+              required
+              minlength="3"
+              aria-describedby="nombreError"
+            />
+            <div id="nombreError" class="invalid-feedback">
+              Por favor ingresa tu nombre (mínimo 3 caracteres).
+            </div>
+          </div>
+
+          <!-- Email -->
+          <div class="mb-3">
+            <label for="email" class="form-label fw-semibold"
+              >Correo electrónico</label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              name="email"
+              required
+              aria-describedby="emailError"
+            />
+            <div id="emailError" class="invalid-feedback">
+              Ingresa un correo válido.
+            </div>
+          </div>
+
+          <!-- Producto -->
+          <div class="mb-3">
+            <label for="producto" class="form-label fw-semibold"
+              >Producto de interés</label
+            >
+            <select
+              class="form-select"
+              id="producto"
+              name="producto"
+              required
+              aria-describedby="productoError"
+            >
+              <option value="">Selecciona un producto...</option>
+              <option value="audifonos">Audífonos Bluetooth</option>
+              <option value="smartwatch">Smartwatch Pro</option>
+              <option value="mouse">Mouse Gamer RGB</option>
+            </select>
+            <div id="productoError" class="invalid-feedback">
+              Selecciona un producto.
+            </div>
+          </div>
+
+          <!-- Mensaje -->
+          <div class="mb-3">
+            <label for="mensaje" class="form-label fw-semibold"
+              >Mensaje (opcional)</label
+            >
+            <textarea
+              class="form-control"
+              id="mensaje"
+              name="mensaje"
+              rows="3"
+            ></textarea>
+          </div>
+
+          <!-- Términos -->
+          <div class="mb-3 form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="terminos"
+              required
+            />
+            <label class="form-check-label" for="terminos">
+              Acepto los términos y condiciones
+            </label>
+            <div class="invalid-feedback">Debes aceptar los términos.</div>
+          </div>
+
+          <button type="submit" class="btn btn-primary w-100 btn-lg">
+            Enviar Pedido
+          </button>
+
+          <!-- Mensaje de éxito -->
+          <div
+            id="mensajeExito"
+            class="alert alert-success mt-3 d-none"
+            role="alert"
+          >
+            ✅ ¡Pedido enviado con éxito! Te contactaremos pronto.
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
