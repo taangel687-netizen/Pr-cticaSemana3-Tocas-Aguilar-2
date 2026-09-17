@@ -1,0 +1,31 @@
+/* ============================================
+   UTILIDADES TAILWIND QUE NO GENERA EL CDN
+   ============================================ */
+.hover\:scale-105:hover {
+  transform: scale(1.05);
+}
+.transition-transform {
+  transition: transform 0.3s ease-in-out;
+}
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+.text-balance {
+  text-wrap: balance;
+}
+
+/* ============================================
+   AJUSTES GENERALES
+   ============================================ */
+body {
+  font-family:
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    sans-serif;
+}
+
+section {
+  scroll-margin-top: 80px;
+}
